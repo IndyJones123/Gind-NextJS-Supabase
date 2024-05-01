@@ -2,6 +2,9 @@ import { fetchAchivement } from "@/actions/achivement";
 import React from "react";
 import { Game } from "../../utils/supabase";
 
+import Image from "next/image";
+
+
 const page = async (): Promise<React.ReactElement> => {
   const data = await fetchAchivement();
 
@@ -13,7 +16,9 @@ const page = async (): Promise<React.ReactElement> => {
         <div className="overflow-x-auto flex flex-col gap-5 items-center">
           <h1>List Achivement Yang Bisa Didapatkan Pemain</h1>
           <div className="skeleton w-full h-32 stats shadow container mx-auto items-center flex justify-center">
-            <img
+
+            <Image
+
               src="https://i.ibb.co/PwSNchF/dota-2-0.jpg"
               className="h-32"
               alt=""

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { ReactElement } from "react";
 
 type ParamsProps = {
@@ -17,7 +18,7 @@ const WrapperImage = ({
     <section className="container mx-auto px-4">
       <div className="card lg:card-side bg-base-300 shadow-xl">
         <figure>
-          <img src={image} alt="Doa" className="w-80 h-80 rounded-xl" />
+          <Image src={image} alt="Doa" className="w-80 h-80 rounded-xl" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
