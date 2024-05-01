@@ -106,30 +106,29 @@ const page = async (): Promise<React.ReactElement> => {
             <WrapperImage
               title="List Game"
               description="Daftar Game Yang Telah Dibuat Oleh GIND"
-              image="https://i.ibb.co/sPWc48q/Game.png"
-              children={
-                <Link href="/game" className="btn btn-primary">
-                  Check Game
-                </Link>
-              }></WrapperImage>
+              image="https://i.ibb.co/sPWc48q/Game.png">
+              {" "}
+              <Link href="/game" className="btn btn-primary">
+                Check Game
+              </Link>
+            </WrapperImage>
             <WrapperImage
               title="List Achivement"
               description="Lihat Achivement Apa Yang Perlu Didapatkan Untuk Meraih Points Tertinggi"
-              image="https://i.ibb.co/4dQK3qF/images.jpg"
-              children={
-                <Link href="/achivement" className="btn btn-primary">
-                  Check Achivement
-                </Link>
-              }></WrapperImage>
+              image="https://i.ibb.co/4dQK3qF/images.jpg">
+              {" "}
+              <Link href="/achivement" className="btn btn-primary">
+                Check Achivement
+              </Link>
+            </WrapperImage>
             <WrapperImage
               title="Leaderboard"
               description="Raih Peringkat Tertinggi Tunjukkan Kemampuan Terhebat Mu"
-              image="https://i.ibb.co/hRD395S/How-to-Create-An-Anonymous-Leaderboard-in-Tableau-CRM-1.jpg"
-              children={
-                <Link href="/leaderboard" className="btn btn-primary">
-                  Check Leaderboard
-                </Link>
-              }></WrapperImage>
+              image="https://i.ibb.co/hRD395S/How-to-Create-An-Anonymous-Leaderboard-in-Tableau-CRM-1.jpg">
+              <Link href="/leaderboard" className="btn btn-primary">
+                Check Leaderboard
+              </Link>
+            </WrapperImage>
           </div>
         </div>
       )}
