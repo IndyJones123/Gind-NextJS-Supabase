@@ -12,8 +12,6 @@ const page = async (): Promise<React.ReactElement> => {
   const users = await supabase.from("UserStats").select();
   const data = await fetchUserData();
 
-  console.log(data.data.user);
-
   return (
     <Wrapper title="Welcome To Sistem Informasi Game">
       {data.data.user ? (
