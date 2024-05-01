@@ -29,18 +29,15 @@ const page = async (): Promise<React.ReactElement> => {
                   key={games.id}
                   title={games.namagame}
                   description={games.description}
-                  image={games.gambar}
-                  children={
-                    <Link
-                      href={
-                        games.LinkPortal
-                          ? games.LinkPortal
-                          : "/game/specificgame"
-                      }
-                      className="btn btn-primary">
-                      Check Game
-                    </Link>
-                  }></WrapperImage>
+                  image={games.gambar}>
+                  <Link
+                    href={
+                      games.LinkPortal ? games.LinkPortal : "/game/specificgame"
+                    }
+                    className="btn btn-primary">
+                    Check Game
+                  </Link>
+                </WrapperImage>
               ))}
           </div>
         </div>
