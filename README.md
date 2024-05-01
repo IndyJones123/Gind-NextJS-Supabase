@@ -1,6 +1,6 @@
 How To Use : 
 
-1) Download .env.local and place it in ../my-app/
+1) Download .env.local and place it in ../
 heres the link : https://drive.google.com/drive/folders/1S0huDpRRcz1bv47H8mnFFLpWmXJ1D0cJ?usp=sharing
 
 2) Open terminal then run "npm install"
