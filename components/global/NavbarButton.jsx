@@ -11,7 +11,7 @@ export default function NavbarButton() {
 
   useEffect(() => {
     async function getUser() {
-      const supabase = createClient();
+      const supabase = await createClient();
       try {
         const { data, error } = await supabase.auth.getUser();
         if (error || !data?.user) {
