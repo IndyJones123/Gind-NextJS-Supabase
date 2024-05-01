@@ -107,7 +107,6 @@ const page = async (): Promise<React.ReactElement> => {
               title="List Game"
               description="Daftar Game Yang Telah Dibuat Oleh GIND"
               image="https://i.ibb.co/sPWc48q/Game.png">
-              {" "}
               <Link href="/game" className="btn btn-primary">
                 Check Game
               </Link>
@@ -116,7 +115,6 @@ const page = async (): Promise<React.ReactElement> => {
               title="List Achivement"
               description="Lihat Achivement Apa Yang Perlu Didapatkan Untuk Meraih Points Tertinggi"
               image="https://i.ibb.co/4dQK3qF/images.jpg">
-              {" "}
               <Link href="/achivement" className="btn btn-primary">
                 Check Achivement
               </Link>
