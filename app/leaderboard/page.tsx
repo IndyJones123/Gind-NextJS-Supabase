@@ -1,8 +1,7 @@
 import { fetchUserData } from "@/actions/auth";
 import React from "react";
-import Wrapper from "@/components/global/Wrapper";
-import WrapperGame from "@/components/global/WrapperGame";
 import { fetchUser } from "@/actions/UsersStats";
+import Image from "next/image";
 
 const page = async (): Promise<React.ReactElement> => {
   const dataUser = await fetchUser();
@@ -15,7 +14,7 @@ const page = async (): Promise<React.ReactElement> => {
         <div className="overflow-x-auto flex flex-col gap-5 items-center">
           <h1>Leaderboard / Ranking Pemain Komunitas GIND</h1>
           <div className="skeleton w-full h-32 stats shadow container mx-auto items-center flex justify-center">
-            <img
+            <Image
               src="https://i.ibb.co/PwSNchF/dota-2-0.jpg"
               className="h-32"
               alt=""

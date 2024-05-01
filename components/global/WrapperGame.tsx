@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React, { ReactElement } from "react";
 
 type ParamsProps = {
   title?: string;
   description?: string;
-  image?: string;
+  image?: string | undefined;
   children?: ReactElement;
   genre?: string[];
 };
@@ -20,11 +21,13 @@ const WrapperGame = ({
       <div className="w-full sm:w-96">
         <div className="card bg-base-300 shadow-xl h-full">
           <figure className="h-48 sm:h-auto">
-            <img
-              src={image}
-              alt="Shoes"
-              className="object-cover w-full h-full"
-            />
+            {image && (
+              <Image
+                alt="Shoes"
+                src={image}
+                className="object-cover w-full h-full"
+              />
+            )}
           </figure>
           <div className="card-body">
             <h2 className="card-title">{title}</h2>
