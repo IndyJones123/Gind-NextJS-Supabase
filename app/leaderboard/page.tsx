@@ -1,7 +1,5 @@
 import { fetchUserData } from "@/actions/auth";
 import React from "react";
-import Wrapper from "@/components/global/Wrapper";
-import WrapperGame from "@/components/global/WrapperGame";
 import { fetchUser } from "@/actions/UsersStats";
 import Image from "next/image";
 
