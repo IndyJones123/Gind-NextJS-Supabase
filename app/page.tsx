@@ -26,6 +26,7 @@ const page = async (): Promise<React.ReactElement> => {
             {game.data &&
               game.data.map((games) => (
                 <WrapperImage
+                  key={games.id}
                   title={games.namagame}
                   description={games.description}
                   image={games.gambar}
