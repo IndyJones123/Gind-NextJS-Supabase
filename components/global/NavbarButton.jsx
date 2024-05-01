@@ -10,7 +10,7 @@ export default function NavbarButton() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function getUser() {
+    const getUser = async () => {
       const supabase = await createClient();
       try {
         const { data, error } = await supabase.auth.getUser();
@@ -24,7 +24,7 @@ export default function NavbarButton() {
       } finally {
         setLoading(false);
       }
-    }
+    };
     getUser();
   }, [user]);
 
