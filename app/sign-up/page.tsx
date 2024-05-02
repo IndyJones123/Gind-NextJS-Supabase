@@ -49,7 +49,7 @@ const page = () => {
                 name="password"
                 id="password"
                 className="grow"
-                placeholder="email"
+                placeholder="Password"
               />
             </label>
             <p>

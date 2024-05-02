@@ -15,7 +15,6 @@ export async function login(formData: FormData) {
 
   const { data, error } = await supabase.auth.signInWithPassword(datalogin);
 
-  console.log("ini data last sign in" + data.user?.last_sign_in_at);
   if (error) {
     redirect("/error");
   }
@@ -25,7 +24,6 @@ export async function login(formData: FormData) {
     .upsert({ last_online: data.user?.last_sign_in_at })
     .eq("email", data.user.email);
 
-  console.log("error" + userError?.hint + userError?.details + userError?.code);
   revalidatePath("/", "layout");
   redirect("/");
 }
