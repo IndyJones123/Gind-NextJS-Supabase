@@ -116,11 +116,11 @@ const page = async (): Promise<React.ReactElement> => {
               }></WrapperImage>
             <WrapperImage
               title="List Achivement"
-              description="Lihat Achivement Apa Yang Perlu Didapatkan Untuk Meraih Points Tertinggi"
+              description="Lihat Achivement Progress Permainan Pemain"
               image="https://i.ibb.co/4dQK3qF/images.jpg"
               children={
                 <Link href="/achivement" className="btn btn-primary">
-                  Check Achivement
+                  Check Achivement Users
                 </Link>
               }></WrapperImage>
             <WrapperImage

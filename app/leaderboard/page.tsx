@@ -7,7 +7,7 @@ import { fetchUser } from "@/actions/UsersStats";
 const page = async (): Promise<React.ReactElement> => {
   const dataUser = await fetchUser();
 
-  console.log(dataUser.data);
+
 
   return (
     <div className="flex flex-col w-full lg:flex-row">

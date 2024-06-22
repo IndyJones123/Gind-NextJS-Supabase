@@ -1,9 +1,9 @@
-import { fetchAchivement } from "@/actions/achivement";
+import { fetchAchivementUsers } from "@/actions/achivement";
 import React from "react";
 import Image from "next/image";
 
 const page = async (): Promise<React.ReactElement> => {
-  const data = await fetchAchivement();
+  const data = await fetchAchivementUsers();
 
   console.log(data.data);
 
@@ -11,7 +11,7 @@ const page = async (): Promise<React.ReactElement> => {
     <div className="overflow-x-auto">
       <div className="grid flex-grow h-screen card bg-base-300 rounded-box justify-center">
         <div className="overflow-x-auto flex flex-col gap-5 items-center">
-          <h1>List Achivement Yang Bisa Didapatkan Pemain</h1>
+          <h1>Achivement Users</h1>
           <div className="skeleton w-full h-32 stats shadow container mx-auto items-center flex justify-center">
             <img
               src="https://i.ibb.co/PwSNchF/dota-2-0.jpg"
@@ -24,9 +24,10 @@ const page = async (): Promise<React.ReactElement> => {
             <thead>
               <tr>
                 <th></th>
+                <th>Email</th>
                 <th>Achivement</th>
-                <th>Deskripsi</th>
-                <th>Game</th>
+                <th>Keberhasilan</th>
+                <th>Kesalahan</th>
               </tr>
             </thead>
             <tbody>
@@ -36,9 +37,10 @@ const page = async (): Promise<React.ReactElement> => {
                   .map((achivement, index) => (
                     <tr key={index}>
                       <th>{index + 1}</th>
-                      <td>{achivement.namaAchivement}</td>
-                      <td>{achivement.deskripsi}</td>
-                      <td>{achivement.id_game}</td>
+                      <td>{achivement.email}</td>
+                      <td>{achivement.achivement}</td>
+                      <td>{achivement.keberhasilan}</td>
+                      <td>{achivement.kesalahan}</td>
                     </tr>
                   ))}
             </tbody>

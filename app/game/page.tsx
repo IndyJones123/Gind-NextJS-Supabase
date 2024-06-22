@@ -7,7 +7,6 @@ import { fetchGame } from "@/actions/game";
 const page = async (): Promise<React.ReactElement> => {
   const data = await fetchGame();
 
-  console.log(data.data);
 
   return (
     <Wrapper title="List Game">

@@ -7,9 +7,18 @@ export const supabase = createClient(
 
 export interface UserStats {
   email: string;
+  password: string;
   role: string | null;
+  achivement: Array<Record<string, any>>;
   points: number;
   created_at?: string;
+}
+
+export interface UserAchivement {
+  email: string;
+  achivement: string;
+  kesalahan: number;
+  keberhasilan: number;
 }
 
 export interface Game {
